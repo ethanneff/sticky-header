@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>title</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      #sticky {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: lightgrey;
+        left: 0;
+        right: 0;
+        height: 6em;
+        transition: height 300ms ease;
+      }
+
+      #content {
+        flex-direction: column;
+        padding-top: 8em;
+        margin: 0 auto;
+        max-width: 60em;
+        padding-bottom: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="sticky">header</div>
+    <div id="content">
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div>
+      <div>words</div> 
+    </div>
+  </body>
+  <script>
+    const header = document.getElementById("sticky")
+
+    window.addEventListener('scroll', function(e) {
+      const headerHeight = window.scrollY > 100 ? "3em" : "6em"
+      header.setAttribute("style", `height:${headerHeight}`);
+    });
+  </script>
+</html>
